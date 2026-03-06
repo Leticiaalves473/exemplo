@@ -1,3 +1,6 @@
+import logging
+
+
 def soma(*args):
     try:
         total = 0
@@ -5,4 +8,4 @@ def soma(*args):
             total += float (n)
         return total
     except Exception as e:
-     print(str(e))
+     logging.debug(str(e))
